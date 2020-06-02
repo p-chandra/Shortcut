@@ -33,13 +33,14 @@ RUN specific version (else it will run newest verison)
  - docker run redis:4.0 
 ----------------------------------------------------------------------------------
 SAVE an image to a tar
- - docker save **image_name** > **/home/save.tar**
+ - docker save **image_name** > /home/save.tar
 	
 LOAD tar
- - docker load *path to image tar file*
+ - docker load < /home/save.tar
 ----------------------------------------------------------------------------------
 
 EXPORT
- - sudo docker export [CONTAINER ID] > /home/export.tar
+ - docker export **container_ID** > /home/export.tar
 
 IMPORT
+ - docker import - busybox-1-export:latest
