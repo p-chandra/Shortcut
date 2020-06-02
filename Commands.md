@@ -41,6 +41,8 @@ LOAD tar
 
 EXPORT
  - docker export **container_ID** > /home/export.tar
+ - docker export red_panda > latest.tar
 
 IMPORT
- - docker import - busybox-1-export:latest
+ - docker import /path/to/exampleimage.tgz
+ - cat exampleimage.tgz | docker import - exampleimagelocal:new
