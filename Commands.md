@@ -27,3 +27,7 @@ PULL image (but not run container)
 EXECUTE command on container (Example if container running ubuntu)
  - docker exec 123234 ls /etc/hosts
  - docker exec container_name echo "hello world"
+
+RUN specific version (else it will run newest verison)
+ - docker run redis (<-- new version)
+ - docker run redis:4.0 
