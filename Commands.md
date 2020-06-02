@@ -31,3 +31,9 @@ EXECUTE command on container (Example if container running ubuntu)
 RUN specific version (else it will run newest verison)
  - docker run redis (<-- new version)
  - docker run redis:4.0 
+
+SAVE an image to a tar
+ - docker save -o <path for generated tar file> <image name>
+	
+LOAD tar
+ - docker load -i <path to image tar file>
