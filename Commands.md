@@ -40,6 +40,6 @@ LOAD tar
 ----------------------------------------------------------------------------------
 
 EXPORT
- - sudo docker export **<CONTAINER ID>** > /home/export.tar
+ - sudo docker export [CONTAINER ID] > /home/export.tar
 
 IMPORT
