@@ -1,4 +1,4 @@
-#GDB commands
+GDB commands
 
 Basic Commands 
  run or r      –> executes the program from start to end.
