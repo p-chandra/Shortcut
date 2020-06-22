@@ -9,18 +9,18 @@ LIST containers (ps -a list all containers stopped or working)
 	
 STOP container (must provide ID or Name)
  - docker stop 123234 
- - docker stop container_name
+ - docker stop container_id
 
 LIST IMAGES
  - docker images
 
 REMOVE IMAGES (must stop and delete all containers related to image first)
  - docker image rm nginx
- - docker image rm *image id*
+ - docker image rm image_id
 
 REMOVE container (must provide ID or Name)
- - docker stop 123234
- - docker stop container_name
+ - docker rm 123234
+ - docker rm container_id
 
 PULL image (but not run container)
  - docker pull nginx
