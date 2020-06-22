@@ -15,8 +15,8 @@ LIST IMAGES
  - docker images
 
 REMOVE IMAGES (must stop and delete all containers related to image first)
- - docker rm nginx
- - docker rm *image id*
+ - docker image rm nginx
+ - docker image rm *image id*
 
 REMOVE container (must provide ID or Name)
  - docker stop 123234
