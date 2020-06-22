@@ -15,7 +15,8 @@ LIST IMAGES
  - docker images
 
 REMOVE IMAGES (must stop and delete all containers related to image first)
- - docker rmi nginx
+ - docker rm nginx
+ - docker rm *image id*
 
 REMOVE container (must provide ID or Name)
  - docker stop 123234
@@ -77,5 +78,6 @@ IMPORT
   SERVICES 
    - sudo service docker [stop, status, restart, start...]
    - sudo service docker (for help)
+  
   
   
