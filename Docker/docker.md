@@ -1,20 +1,19 @@
 # Docker BASIC Commands
-
- **START** docker in DAEMON mode
- ```
- sudo docker -d
- ```
-
- **START** docker as SERVICE with docker's upstart configuration file
- ```
- sudo service docker start
- ```
- 
  **RUN** a container (Note* if an image is not on the host, it will go on the hub to pull it)
  ``` 
  docker run image
  ```
 
+ **RUN** docker in DAEMON mode
+ ```
+ sudo docker -d
+ ```
+
+ **RUN** docker as SERVICE with docker's upstart configuration file
+ ```
+ sudo service docker start
+ ```
+ 
  **LIST** all open/running containers (-a shows open and closed)
  ``` 
  docker ps
