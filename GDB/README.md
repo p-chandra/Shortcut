@@ -2,29 +2,64 @@
 
 ### Basic Commands 
 ---------------------------------------------------------
- > run or r      –> executes the program from start to end.
+ **RUN** the program from start to end.
+ ```
+ run or r
+ ```
  
- > break or b    –> sets breakpoint on a particular line.
-
- > disable       -> disable a breakpoint.
-
- > enable        –> enable a disabled breakpoint.
+ **SET BREAKPOINT** on a particular line.
+ ```
+ break or b
+ ```
  
- > next or n     -> executes next line of code, but don’t dive into functions.
+ **DISABLE** a **BREAKPOINT**.
+ ```
+ disable
+ ```
  
- > step or s     –> go to next instruction, diving into the function.
+ **ENABLE** a **DISABLED BREAKPOINT**.
+ ```
+ enable
+ ```
  
- > list or l     –> displays the code.
+ **NEXT LINE** of code aka step-over
+ ```
+ next or n
+ ```
  
- > print or p    –> used to display the stored value.
+ **STEP IN** to the function
+ ```
+ step or s
+ ```
  
- > quit or q     –> exits out of gdb.
+ **DISPLAY** the code.
+ ```
+ list or l
+ ```
  
- > clear         –> to clear all breakpoints.
+ **PRINT** stored values.
+ ```
+ print or p
+ ```
  
- > continue or c –> continue normal execution.        
+ **EXIT** out of gdb.
+ ```
+ quit or q
+ ```
  
- > bt            –> backtrack
-
+ **CLEAR** all breakpoints.
+ ```
+ clear
+ ```
+ 
+ **CONTINUE** normal execution
+ ```
+ continue or c       
+ ```
+ 
+ **BACKTRACK**
+ ```
+ bt
+ ```
 ### Special Commands 
 ---------------------------------------------------------
