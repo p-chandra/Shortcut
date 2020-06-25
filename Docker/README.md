@@ -1,5 +1,5 @@
 # Docker BASIC Commands
- **RUN** a container (Note* if an image is not on the host, it will go on the hub to pull it)
+ **RUN** a container *Note this is the most basic way to run*
  ``` 
  docker run image
  ```
