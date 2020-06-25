@@ -12,40 +12,41 @@
  
  **RUN** a container (Note* if an image is not on the host, it will go on the hub to pull it)
  ``` 
- docker run nginx
+ docker run image
  ```
 
- **LIST** containers (ps -a list all containers stopped or working)
+ **LIST** all open/running containers (-a shows open and closed)
  ``` 
- docker ps 
+ docker ps
  docker ps -a 
  ```
 
- **STOP** container (must provide ID or Name)
+ **STOP** container
  ```
- docker stop 123234 
  docker stop container_name
+ docker stop container_id
  ```
 
  **LIST** images
  ```
- docker images
+ docker images ls
  ```
 
- **REMOVE** images (must stop and delete all containers related to image first)
+ **REMOVE** images (must stop containers related to image first)
  ```
- docker rmi nginx
+ docker rm image_id
  ```
 
- **REMOVE** container (must provide ID or Name)
+ **REMOVE** container (will remove related image)
  ```
- docker stop 123234
- docker stop container_name
+ docker rm container_name
+ docker rm container_id
  ```
 
  **PULL** image (but not run container)
  ```
- docker pull nginx
+ 
+ EX: docker pull nginx
  ```
 
  check container **NETWORK** status
