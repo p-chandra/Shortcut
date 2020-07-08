@@ -1,4 +1,4 @@
-## Scan
+## Scan IP, Host, Subnet
 ```
 nmap 192.168.0.1
 nmap www.google.com
