@@ -63,3 +63,18 @@
  ```
 ### Special Commands 
 ---------------------------------------------------------
+ 
+ **GUI / TUI mode** the code.
+ ```
+ layout asm
+ layout regs
+ press 'CTRL + X + A'            to EXIT
+ press 'CTRL + X' then 'o'       will switch window.. NOT 'CTRL + X + o'
+ ```
+ 
+ **INFO** the code.
+ ```
+ info file
+ info functions
+ info breakpoints
+ ```
