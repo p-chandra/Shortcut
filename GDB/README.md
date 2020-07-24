@@ -77,4 +77,5 @@
  info file
  info functions
  info breakpoints
+ info reg
  ```
