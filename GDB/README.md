@@ -78,6 +78,7 @@
  info functions
  info breakpoints
  info reg
+ info proc map
  ```
  
  **Breakpoint**
@@ -88,4 +89,7 @@
 ```
 ^c
 disas main //or functions
+x/100i  // look at the next 100 lines
+x/si 0x80480ea // print string
+x/s $esi //prints whats in the register in strings
 ```
