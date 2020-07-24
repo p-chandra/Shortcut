@@ -87,4 +87,5 @@
 **Interrupt**
 ```
 ^c
+disas main //or functions
 ```
