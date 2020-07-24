@@ -92,4 +92,18 @@ disas main //or functions
 x/100i  // look at the next 100 lines
 x/si 0x80480ea // print string
 x/s $esi //prints whats in the register in strings
+x/10d $eip
+
 ```
+
+**32 bit**
+READ
+mov eax, 0x4
+mov eax, 0x1
+mov some register with address
+
+Write
+mov eax, 0x3
+mov eax, 0x2
+mov some register with address
+
