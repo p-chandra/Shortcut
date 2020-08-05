@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+ int a; float b; char c;
+ char word[10]
+ char sen[50]
+ 
+ scanf("Enter a number: %d\nEnter a rational number: %f\n
+     Enter a character: %c\nEnter a word: %s\nEnter a sentence: %[^\n]*c%\n",
+     &a,&b,&c,&word,&sen)
+
+ printf("Int = %d\nFloat = %f\nChar = %c\nChar[10] = %s,\nChar[50] = %s\n",a,b,c,word,sen)
+ 
+ return 0;
+}
