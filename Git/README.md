@@ -28,16 +28,34 @@ git add <filename>
 git commit -am "Enter message here"
 git commit -m "Enter message here"
 ```
-**Step 6** If you want to use existing repository or create a new one
+**Step 6** Add your github repo url to your local branch
 ```
 git remote add origin <repo URL>          // Add a new remote
-Git remote set-url origin <repo url>      // Change the url of an existing remote
-git remote -v  // verifies the new remote URL
 ```
 
 **Step 7** push local changes to master
 ```
 git push -u origin master
+```
+**Special Step 6.5** If you already have some files in your master branch and different files in your local, you will need to perform these steps to merge them else github will throw an error such as 
+```
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+or 
+```
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+Github sees two different histories and will refuse to merge so after **Step 6** enter the code below then proceed to step 7.
+```
+git pull origin master --allow-unrelated-histories  // This will merge both your local and master regardless of the different history
 ```
 
 # Branch
