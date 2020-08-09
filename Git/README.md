@@ -53,7 +53,7 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-Github sees two different histories and will refuse to merge so after **Step 6** enter the code below then proceed to step 7.
+Github sees two different histories and will refuse to merge so after **Step 6** enter the code below then proceed to step 7. *Note - DO NOT use 'git push -f origin master' unless you want to DELETE all your files in master and replace them with local
 ```
 git pull origin master --allow-unrelated-histories  // This will merge both your local and master regardless of the different history
 ```
