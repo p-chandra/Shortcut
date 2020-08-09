@@ -1,19 +1,41 @@
 # Git Commands
 -------------------------------------------------------
-**Git Configuration**  *Note - enter username with quotes*
+**Step 1** Git Configuration  *Note - enter username with quotes*
 ```
-git config --global user.name "git_usernamer"
+git config --global user.name "git_username"
 git config --global user.email johndoe@example.com
 ```
 
-Check status of your current git project on desktop
+**Step 2** In a project folder initialize git.
+```
+git init
+```
+
+**Step 3** Check status of your current git project on desktop. 
 ```
 git status                          
 ```
 
-Commit changes and ready to push
+**Step 4** Adds the files in your new local repo. Preps for commit
 ```
-git commit -am                      
+git add .           // Period means all files
+git add <filename>
+```
+
+**Step 5** Commit changes and ready to push *Note - a = all -- m = message*
+```
+git commit -am "Enter message here"
+git commit -m "Enter message here"
+```
+**Step 6** If you want to use existing repository
+```
+git remote add origin <repo URL>
+git remote -v  // verifies the new remote URL
+```
+
+**Step 7** push local changes to master
+```
+git push origin master
 ```
 
 Create branch
@@ -24,11 +46,6 @@ git checkout -b branchname
 Pushing changes to your branch
 ```
 git push origin branchname          
-```
-
-Pushing changes to origin master
-```
-git push origin master              
 ```
 
 Switch branch
@@ -75,9 +92,4 @@ git reset --hard origin/branchname  *Erase your changes and pulls from branch*
 Revert a change that you have committed
 ```
 git revert <commit 1> <commit 2>    
-```
-
-Adds all modified and new files to current directory
-```
-git add .                           
 ```
