@@ -22,7 +22,7 @@ git add .           // Period means all files
 git add <filename>
 ```
 
-**Step 5** Commit changes and ready to push *Note - a = all -- m = message*
+**Step 5** Commit changes and ready to push *Note -a = all  -m = message*
 ```
 git commit -am "Enter message here"
 git commit -m "Enter message here"
