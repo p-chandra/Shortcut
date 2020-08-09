@@ -1,4 +1,4 @@
-# Git Commands
+# Git Setup
 -------------------------------------------------------
 **Step 1** Git Configuration  *Note - enter username with quotes*
 ```
@@ -38,6 +38,9 @@ git remote -v  // verifies the new remote URL
 git push origin master
 ```
 
+# Branch
+-------------------------------------------------------
+
 Create branch
 ```
 git checkout -b branchname
@@ -58,25 +61,27 @@ Check all branches on computer
 git branch -a                      
 ```
 
-Downloads content from the repository without merge
+Update your branch with master
 ```
-git fetch --all
+git checkout branchname
+git pull origin master
 ```
 
 Integrate changes from another branch
 ```
 git merge branchname                
 ```
+## Other
+----------------------------------------------------
+
+Downloads content from the repository without merge
+```
+git fetch --all
+```
 
 Git pull does a git fetch followed by a git merge
 ```
 git pull origin branchname          
-```
-
-**Update your branch with master**
-```
-git checkout branchname
-git pull origin master
 ```
 
 Revert all changes to your working copy
