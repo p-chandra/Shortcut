@@ -9,6 +9,7 @@ git config --global user.email johndoe@example.com
 **Step 2** In a project folder initialize git.
 ```
 git init
+echo "# MESSAGE" >> README.md   // Creates a readme file if you are making a new repo
 ```
 
 **Step 3** Check status of your current git project on desktop. 
@@ -27,15 +28,16 @@ git add <filename>
 git commit -am "Enter message here"
 git commit -m "Enter message here"
 ```
-**Step 6** If you want to use existing repository
+**Step 6** If you want to use existing repository or create a new one
 ```
-git remote add origin <repo URL>
+git remote add origin <repo URL>          // Add a new remote
+Git remote set-url origin <repo url>      // Change the url of an existing remote
 git remote -v  // verifies the new remote URL
 ```
 
 **Step 7** push local changes to master
 ```
-git push origin master
+git push -u origin master
 ```
 
 # Branch
