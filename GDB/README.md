@@ -98,12 +98,20 @@ x/10d $eip
 
 **32 bit**
 READ
+```
 mov eax, 0x4
 mov eax, 0x1
 mov some register with address
+```
 
 Write
+```
 mov eax, 0x3
 mov eax, 0x2
 mov some register with address
+```
 
+**Python**
+```
+r <<< &(python -c "print 'A'*40 + '\xff\xff\xff\xff\xff\xff'")
+```
