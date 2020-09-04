@@ -76,7 +76,7 @@
  ```
  info file
  info functions
- info breakpoints
+ info break
  info reg
  info proc map
  ```
@@ -85,15 +85,15 @@
  ```
  b *0x11111111111
  ```
-**Interrupt**
+**Other Usefull Commands**
 ```
-^c
-disas main //or functions
-x/100i  // look at the next 100 lines
-x/si 0x80480ea // print string
-x/s $esi //prints whats in the register in strings
-x/10d $eip
+disas main
+disas method_name
 
+x/100i         //look at the next 100 lines
+x/si 0x80480ea //print string
+x/s $esi       //prints whats in the register in strings
+x/d $eip       //print contents of register eip  
 ```
 
 **32 bit**
