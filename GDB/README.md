@@ -59,8 +59,8 @@ print $rbp
 ```
 
 **32 bit**
-READ
 ```
+READ
 mov eax, 0x4
 mov eax, 0x1
 mov some register with address
