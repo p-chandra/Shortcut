@@ -1,4 +1,4 @@
-# These are shortcuts I use daily and will continue to add more information as I learn
+# These are shortcuts I use daily
 
 - Basic Docker
 
@@ -8,3 +8,8 @@
 
 - Basic GIT
 
+
+- Basic Nmap
+
+
+Vim and C are empty for now
