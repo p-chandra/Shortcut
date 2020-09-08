@@ -7,3 +7,6 @@ done
 
 
 for line in $(curl https://api.github.com/orgs/threatexpress/repos?access_token=<EnterTokenHere> | grep -o "git@github.com:threatexpress/[^ ,\"]\+");do git clone $line;done
+
+
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;
