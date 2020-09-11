@@ -73,5 +73,5 @@ mov some register with address
 
 **Python**
 ```
-r <<< &(python -c "print 'A'*40 + '\xff\xff\xff\xff\xff\xff'")
+r <<< $(python -c "print 'A'*40 + '\xff\xff\xff\xff\xff\xff'")
 ```
