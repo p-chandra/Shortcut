@@ -32,3 +32,12 @@ git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 
+#disable ASLR - this will auto enable after reboot
+echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+
+#enable ASLR
+echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
+
+#permanently disable ASLR
+#Add a file /etc/sysctl.d/01-disable-aslr.conf and in the file write 
+#kernel.randomize_va_space = 0
