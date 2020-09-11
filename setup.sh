@@ -32,6 +32,9 @@ git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 
+#install checksec
+sudo apt install checksec
+
 #disable ASLR - this will auto enable after reboot
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
