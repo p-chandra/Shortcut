@@ -39,8 +39,21 @@ sudo apt install checksec
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
 #enable ASLR
-echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
+#echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
 
 #permanently disable ASLR
 #Add a file /etc/sysctl.d/01-disable-aslr.conf and in the file write 
 #kernel.randomize_va_space = 0
+
+#Set your clock time based on internet
+sudo apt-get install ntp
+
+#When using git server inside private network, you might run into CAcert and CRLfile issue
+git config --global http.sslverify "false"
+
+#update CA Cert.
+sudo apt-get install --reinstall ca-certificates
+sudo mkdir /usr/local/share/ca-certificates/cacert.org
+sudo wget -P /usr/local/share/ca-certificates/cacert.org http://www.cacert.org/certs/root.crt http://www.cacert.org/certs/class3.crt
+sudo update-ca-certificates
+git config --global http.sslCAinfo /etc/ssl/certs/ca-certificates.crt
