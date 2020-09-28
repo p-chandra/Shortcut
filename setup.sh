@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Set your clock time based on internet
+sudo apt-get install ntp
+
+#update your distro
+sudo apt-get -u dist-upgrade
+
 #install curl
 sudo apt install curl
 
@@ -44,9 +50,6 @@ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 #permanently disable ASLR
 #Add a file /etc/sysctl.d/01-disable-aslr.conf and in the file write 
 #kernel.randomize_va_space = 0
-
-#Set your clock time based on internet
-sudo apt-get install ntp
 
 #When using git server inside private network, you might run into CAcert and CRLfile issue
 git config --global http.sslverify "false"
