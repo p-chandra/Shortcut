@@ -44,6 +44,9 @@ cd pwndbg
 #install checksec
 sudo apt install checksec
 
+#add command rot13
+echo "alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"" >> .bashrc
+
 #disable ASLR - this will auto enable after reboot
 #echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
