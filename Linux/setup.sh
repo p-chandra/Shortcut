@@ -9,6 +9,9 @@ sudo apt-get -u dist-upgrade -y
 #install curl
 sudo apt install curl -y
 
+#install nasm for assembly
+sudo apt install nasm -y
+
 #install vpn
 sudo apt install network-manager-openconnect network-manager-openconnect-gnome -y
 sudo systemctl restart network-manager.service -y
