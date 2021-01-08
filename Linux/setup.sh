@@ -5,35 +5,35 @@ sudo apt-get update
 sudo apt-get upgrad
 
 #Set your clock time based on internet
-sudo apt-get install ntp -y
+sudo apt-get install ntp
 
 #update your distro
-sudo apt-get -u dist-upgrade -y
+sudo apt-get -u dist-upgrade
 
 #install curl
-sudo apt install curl -y
+sudo apt install curl
 
 #install nasm for assembly
-sudo apt install nasm -y
+sudo apt install nasm
 
 #install vpn
-sudo apt install network-manager-openconnect network-manager-openconnect-gnome -y
-sudo systemctl restart network-manager.service -y
+sudo apt install network-manager-openconnect network-manager-openconnect-gnome
+sudo systemctl restart network-manager.service
 
 #install 32bit libraries
 sudo apt-get install gcc-multilib
 
 #install vim
-sudo apt install vim -y
+sudo apt install vim
 
 #install git
-sudo apt install git -y
+sudo apt install git
 
 #install nmap
-sudo apt install nmap -y
+sudo apt install nmap
 
 #install tmux
-sudo apt install tmux -y
+sudo apt install tmux
 
 #install pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
