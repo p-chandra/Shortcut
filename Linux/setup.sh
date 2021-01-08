@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Update
+sudo apt-get update
+sudo apt-get upgrad
+
 #Set your clock time based on internet
 sudo apt-get install ntp -y
 
@@ -47,8 +51,16 @@ cd pwndbg
 #install checksec
 sudo apt install checksec
 
+#install java 11 JRE
+sudo apt install default-jre
+
+#Install java 11 JDK (Optional)
+sudo apt install default-jdk
+
 #add command rot13
 echo "alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"" >> .bashrc
+
+## Special Commands ##
 
 #disable ASLR - this will auto enable after reboot
 #echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
@@ -61,7 +73,7 @@ echo "alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"" >> .bashrc
 #kernel.randomize_va_space = 0
 
 #When using git server inside private network, you might run into CAcert and CRLfile issue
-git config --global http.sslverify "false"
+#git config --global http.sslverify "false"
 
 #update CA Cert.
 #sudo apt-get install --reinstall ca-certificates
