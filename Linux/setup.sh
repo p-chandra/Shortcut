@@ -2,7 +2,7 @@
 
 #Update
 sudo apt-get update
-sudo apt-get upgrad
+sudo apt-get upgrade
 
 #Set your clock time based on internet
 sudo apt-get install ntp
