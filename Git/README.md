@@ -27,6 +27,7 @@ git add <filename>
 ```
 git commit -am "Enter message here"
 git commit -m "Enter message here"
+git commit
 ```
 **Step 6** Add your github repo url to your local branch
 ```
@@ -35,7 +36,7 @@ git remote add origin <repo URL>          // Add a new remote
 
 **Step 7** push local changes to master
 ```
-git push -u origin master
+git push
 ```
 **Special Step 6.5** If you already have some files in your master branch and different files in your local, you will need to perform these steps to merge them else github will throw an error such as 
 ```
