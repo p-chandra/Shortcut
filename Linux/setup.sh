@@ -57,8 +57,21 @@ sudo apt install default-jre
 #Install java 11 JDK (Optional)
 sudo apt install default-jdk
 
-#add command rot13
-echo "alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"" >> .bashrc
+#Others
+sudo apt-get install -y \
+    cmake \
+    findutils \
+    libclang-dev \
+    libc-dbg \
+    libglib2.0-0 \
+    libglib2.0-dev \
+    make \
+    netbase \
+    python3-networkx \
+    xz-utils \
+    util-linux \
+    gcc \
+    g++
 
 ## Special Commands ##
 
