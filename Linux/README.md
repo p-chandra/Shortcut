@@ -1,4 +1,4 @@
-
+https://www.redhat.com/sysadmin/linux-environment-variables
 
 You can also put this in the global environment:
 
