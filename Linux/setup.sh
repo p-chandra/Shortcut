@@ -36,9 +36,7 @@ sudo apt install nmap
 sudo apt install tmux
 
 #install pip
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
-python3 -m pip install --upgrade pip
+sudo apt install python3-pip
 
 #install pwntools
 pip3 install pwntools
